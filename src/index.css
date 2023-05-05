@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.widthCurriculum {
+    width: 700px;
+}
+
+.my-link {
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+}
+
+.my-link:hover {
+    transform: scale(1.1);
+}

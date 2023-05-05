@@ -1,6 +1,13 @@
 function Projects() {
   return (
-    <div>Projects</div>
+    <div className="mb-4">
+      <h3>Projects</h3>
+      <ul className="list-disc ml-7">
+        <li>TaskApp</li>
+        <li>BudgetApp</li>
+        <li>DataStructures project</li>
+      </ul>
+    </div>
   )
 }
 
