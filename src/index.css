@@ -2,15 +2,173 @@
 @tailwind components;
 @tailwind utilities;
 
+.backgroundApp{
+    background: url(./assets/fondo.png), linear-gradient(to right, #0c0c0e, rgb(83, 92, 117), rgb(65, 49, 49));
+    animation: gradient 250s ease infinite;
+}
+
 .widthCurriculum {
     width: 800px;
+}
+
+.widthProffesionalInfo {
+    width: 440px;
 }
 
 .my-link {
     display: inline-block;
     transition: transform 0.2s ease-in-out;
+    margin-left: 10px;
+    margin-right: 20px;
+    color: rgb(11, 60, 102);
 }
 
 .my-link:hover {
     transform: scale(1.1);
+}
+
+.skill{
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+.outer{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),6px 6px 10px -1px rgba(255,255,255,0.7);
+}
+
+.inner{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2), inset 4px 4px 6px -1px rgba(255,255,255,0.7), -0.5px -0.5px 0px rgba(255,255,255,0.7), -0.5px -0.5px 0px rgba(255,255,255,0.1), 0.5px 0.5px 0px rgba(0,0,0,0.15), 0px 12px 10px -10px rgba(0,0,0,0.05);
+}
+
+.number{
+    font-size: 15px;
+    color: #555;
+}
+
+circle.circleJavaScript{
+    fill:none;
+    stroke: url(#GradientColor);
+    stroke-width: 10px;
+    stroke-dasharray: 216px;
+    stroke-dashoffset: 216px;
+    animation: animJavaScript 1.5s linear forwards;
+}
+circle.circleHTML{
+    fill:none;
+    stroke: url(#GradientColor);
+    stroke-width: 10px;
+    stroke-dasharray: 216px;
+    stroke-dashoffset: 216px;
+    animation: animHTML 1.5s linear forwards;
+}
+circle.circleCSS{
+    fill:none;
+    stroke: url(#GradientColor);
+    stroke-width: 10px;
+    stroke-dasharray: 216px;
+    stroke-dashoffset: 216px;
+    animation: animCSS 1.5s linear forwards;
+}
+circle.circleTailWind{
+    fill:none;
+    stroke: url(#GradientColor);
+    stroke-width: 10px;
+    stroke-dasharray: 216px;
+    stroke-dashoffset: 216px;
+    animation: animTailWind 1.5s linear forwards;
+}
+circle.circleReact{
+    fill:none;
+    stroke: url(#GradientColor);
+    stroke-width: 10px;
+    stroke-dasharray: 216px;
+    stroke-dashoffset: 216px;
+    animation: animReact 1.5s linear forwards;
+}
+circle.circleJava{
+    fill:none;
+    stroke: url(#GradientColor);
+    stroke-width: 10px;
+    stroke-dasharray: 216px;
+    stroke-dashoffset: 216px;
+    animation: animJava 1.5s linear forwards;
+}
+circle.circlePython{
+    fill:none;
+    stroke: url(#GradientColor);
+    stroke-width: 10px;
+    stroke-dasharray: 216px;
+    stroke-dashoffset: 216px;
+    animation: animPython 1.5s linear forwards;
+}
+
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes animJavaScript {
+    100%{
+        stroke-dashoffset: 43.2;
+    }
+}
+
+@keyframes animHTML {
+    100%{
+        stroke-dashoffset: 10.8;
+    }
+}
+
+@keyframes animCSS {
+    100%{
+        stroke-dashoffset: 54;
+    }
+}
+
+@keyframes animTailWind {
+    100%{
+        stroke-dashoffset: 129.6;
+    }
+}
+
+@keyframes animReact {
+    100%{
+        stroke-dashoffset: 64.8;
+    }
+}
+
+@keyframes animJava {
+    100%{
+        stroke-dashoffset: 32.4;
+    }
+}
+
+@keyframes animPython {
+    100%{
+        stroke-dashoffset: 118.8;
+    }
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
