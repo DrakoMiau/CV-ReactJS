@@ -2,7 +2,10 @@ function PersonalInfo() {
     return (
         <div className="w-1/3 rounded-l-2xl shadow-gray-900 h-full float-left flex flex-col bg-cyan-900">
             <div className="object-top flex justify-center items-center mt-5">
-                
+                <img
+                    src="./assets/Me.jpeg"
+                    className="rounded-full mb-6 w-52 "
+                ></img>
             </div>
             <div className="bg-slate-800 flex-grow rounded-bl-xl text-slate-200">
                 <section>
